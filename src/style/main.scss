@@ -15,8 +15,14 @@ body {
     color: whitesmoke;
 }
 
+.app-wrapper {
+    margin: 0;
+    padding: 0;
+}
+
 .container {
     display: grid;
+    width: 100%;
     padding: 0;
     margin: 0;
     padding: 0;
@@ -216,7 +222,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     text-transform: uppercase;
-    font-size: 2.3rem;
+    font-size: 2rem;
     color: #da595c;
     letter-spacing: 2px;
     font-weight: 800;
@@ -251,7 +257,6 @@ body {
 }
 
 .gallery-image img {
-    border: 1px solid silver;
     border: transparent;
     height: 100%;
     width: 100%;
@@ -259,9 +264,9 @@ body {
 
 .gallery-image:hover {
     cursor: pointer;
-    border: 1px solid silver;
     transition: all .2s ease;
     filter: contrast(140%);
+    box-shadow: 0rem 0rem 3rem rgba(0, 0, 0, .05);
 }
 
 #send-message-text {
