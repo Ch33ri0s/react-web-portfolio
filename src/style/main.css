@@ -5,9 +5,14 @@
 }
 
 body {
-  margin: 35px 70px 35px 70px;
   background-color: whitesmoke;
   font-family: 'Poppins', 'Montserrat', sans-serif;
+}
+
+.app {
+  margin: 35px 70px 35px 70px;
+  padding: 0;
+  color: whitesmoke;
 }
 
 .container {
@@ -15,6 +20,7 @@ body {
   display: grid;
   padding: 0;
   margin: 0;
+  padding: 0;
   margin: auto;
   -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
