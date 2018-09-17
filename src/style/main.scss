@@ -12,7 +12,6 @@ body {
 .app {
     margin: 35px 70px 35px 70px;
     padding: 0;
-    color: whitesmoke;
 }
 
 .app-wrapper {
@@ -30,6 +29,11 @@ body {
     box-shadow: 0px 0px 30px rgba(0, 0, 0, .15);
     border: 1px solid rgba(0, 0, 0, .1);
     background-color: whitesmoke;
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s; /* Firefox < 16 */
+     -ms-animation: fadein 2s; /* Internet Explorer */
+      -o-animation: fadein 2s; /* Opera < 12.1 */
+         animation: fadein 2s;
 }
 
 .nav-bar {
@@ -78,6 +82,10 @@ body {
 
 .nav-bar-text:active {
     text-shadow: 1px 1px 8px rgba(0, 0, 0, 1);
+}
+
+.nav-bar-text:focus {
+    opacity: 0;
 }
 
 .icon-bar {
@@ -132,6 +140,29 @@ body {
     background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
 }
 
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
 @keyframes shake {
     10%,
     90% {
@@ -157,9 +188,14 @@ body {
     position: relative;
     width: 100%;
     height: 100%;
-    filter: contrast(100%);
     -webkit-clip-path: polygon(100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);
     clip-path: polygon(100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);
+}
+
+.game-button-container button {
+    position: absolute;
+    color: red;
+    background-color: whitesmoke;
 }
 
 .service {
@@ -242,7 +278,6 @@ body {
 
 .main-img-divider {
     width: 100%;
-    filter: contrast(90%);
     -webkit-clip-path: polygon(50% 25%, 100% 0, 100% 100%, 0 100%, 0 0);
     clip-path: polygon(50% 25%, 100% 0, 100% 100%, 0 100%, 0 0);
 }
@@ -251,13 +286,12 @@ body {
     background-color: whitesmoke;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 8rem;
-    padding: 8rem;
+    grid-gap: 6rem;
+    padding: 6rem;
     padding-top: 100px;
 }
 
 .gallery-image img {
-    border: transparent;
     height: 100%;
     width: 100%;
 }
@@ -272,6 +306,7 @@ body {
 #send-message-text {
     display: flex;
     justify-content: center;
+    color: #646464;
     align-items: center;
     font-size: 2.1rem;
     padding: 2rem;
@@ -307,6 +342,7 @@ body {
     margin-top: 30px;
     opacity: .4;
     font-size: .8rem;
+    color: #646464;
 }
 
 input[type=text],
@@ -328,6 +364,7 @@ input[type=submit] {
     background-color: #da595c;
     color: white;
     padding: 12px 50px;
+    margin-bottom: 20px;
     border: none;
     font-size: 1.1em;
     cursor: pointer;
@@ -343,7 +380,6 @@ input[type=submit]:hover {
     margin: auto;
     color: whitesmoke;
     background-color: whitesmoke;
-    background-image: linear-gradient(white silver);
     border-top: 1px solid silver;
     border-bottom: 1px solid silver;
 }

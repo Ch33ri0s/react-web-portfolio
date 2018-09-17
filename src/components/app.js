@@ -32,7 +32,7 @@ export default class App extends Component {
             <h1 className="h1">Tenyson C. Partridge</h1>
             <h2 className="h2">Developer & Designer</h2>
           </div>
-
+          
           <div className="service">
 
             <div className="service-style">
@@ -48,12 +48,12 @@ export default class App extends Component {
             <div className="service-style">
               <h2>TESTING</h2>
               <hr />
-              <p>Agile testing methodologies. Creating test plans, cases, processes. </p>
+              <p>Agile testing, test plans, cases, processes. </p>
             </div>
           </div>
 
           <div className="main-img-divider">
-            <img id="skills" className="img-divider" src="https://images.pexels.com/photos/34153/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=750&w=1260"
+            <img id="skills" className="img-divider" src="https://images.pexels.com/photos/270623/pexels-photo-270623.png?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
               alt="img-divider" width="100%" height="600vh" />
           </div>
 
@@ -85,11 +85,8 @@ export default class App extends Component {
               </div>
             </div>
           </div>
-
           <h1 id="send-message-text">Shoot me a Message!</h1>
           <Contact />
-
-
           <div className="footer">
             <hr />
             <ul>
