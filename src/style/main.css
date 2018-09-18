@@ -12,11 +12,14 @@ body {
 .app {
   margin: 35px 70px 35px 70px;
   padding: 0;
+  margin: 0;
+  width: 100%;
 }
 
 .app-wrapper {
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 
 .container {

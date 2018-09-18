@@ -12,11 +12,14 @@ body {
 .app {
     margin: 35px 70px 35px 70px;
     padding: 0;
+    margin: 0;
+    width: 100%;
 }
 
 .app-wrapper {
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 
 .container {
@@ -234,21 +237,6 @@ body {
     letter-spacing: 4px;
 }
 
-.cover button {
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    color: whitesmoke;
-    opacity: .5;
-    font-size: 1.5rem;
-    font-weight: 800;
-    padding: 16px 28px;
-    letter-spacing: 4px;
-}
-
-
 .service-style {
     padding: 80px 0px 80px 0px;
     text-align: center;
@@ -294,13 +282,13 @@ body {
 .gallery-image img {
     height: 100%;
     width: 100%;
-}
-
-.gallery-image:hover {
-    cursor: pointer;
-    transition: all .2s ease;
-    filter: contrast(140%);
-    box-shadow: 0rem 0rem 3rem rgba(0, 0, 0, .05);
+    &:hover {
+        cursor: pointer;
+        transition: all .2s ease;
+        filter: contrast(140%);
+        box-shadow: 0rem 0rem 3rem rgba(0, 0, 0, .05);
+        width: 150%;
+    }
 }
 
 #send-message-text {

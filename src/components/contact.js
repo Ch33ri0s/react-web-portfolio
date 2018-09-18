@@ -14,9 +14,9 @@ export default class Contact extends Component {
         this.onFormSubmit = this.onFormSubmit.bind(this);
     }
 
-    onFormSubmit() {
+    onFormSubmit(event) {
         event.preventDefault();
-        window.open(`mailto: tenysonpartridge@gmail.com=subject=Email from ${this.state.fname + ` ` + this.state.lname} - ${this.state.email}&body=${this.state.subject}`)
+        window.location.href = `mailto:tenysonpartridge@gmail.com?subject=${this.state.subject}`;
         console.log(this.state);
     }
 
