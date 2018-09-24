@@ -23,7 +23,7 @@ export default class App extends Component {
               alt="img-divider" width="100%" height="600vh" />
           </div>
           <Gallery/>
-          <h1 id="send-message-text">Shoot me a Message!</h1>
+          <h1 id="send-message-text">Shoot me a message!</h1>
           <Contact />
           <div className="footer">
             <hr />

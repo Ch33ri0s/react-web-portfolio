@@ -69,8 +69,8 @@ body {
   display: flex;
   list-style-type: none;
   margin: auto;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .nav-bar-text {
@@ -116,7 +116,7 @@ body {
 .icon-bar a {
   display: block;
   text-align: center;
-  padding: 16px;
+  padding: 1rem;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   color: whitesmoke;
@@ -232,12 +232,6 @@ body {
   clip-path: polygon(100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);
 }
 
-.game-button-container button {
-  position: absolute;
-  color: red;
-  background-color: whitesmoke;
-}
-
 .service {
   position: relative;
   display: -ms-grid;
@@ -255,11 +249,10 @@ body {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  color: whitesmoke;
+  color: whitesmoke !important;
   opacity: .9;
   font-size: 3rem;
   font-weight: 800;
-  padding: 16px 28px;
   letter-spacing: 4px;
 }
 
@@ -270,8 +263,8 @@ body {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  color: whitesmoke;
-  opacity: .8;
+  color: whitesmoke !important;
+  opacity: .75;
   font-size: 2rem;
   font-weight: 800;
   padding: 16px 28px;
@@ -311,6 +304,8 @@ body {
 
 .main-img-divider {
   width: 100%;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
   -webkit-clip-path: polygon(50% 25%, 100% 0, 100% 100%, 0 100%, 0 0);
   clip-path: polygon(50% 25%, 100% 0, 100% 100%, 0 100%, 0 0);
 }
@@ -320,9 +315,8 @@ body {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  grid-gap: 5rem;
-  padding: 5rem;
-  padding-top: 100px;
+  grid-gap: 2rem;
+  padding: 2rem;
 }
 
 .gallery-image img {
@@ -352,14 +346,12 @@ body {
       -ms-flex-align: center;
           align-items: center;
   font-size: 2.1rem;
-  padding: 2rem;
+  padding: 2rem 0 2rem 0;
 }
 
 .footer {
-  padding: 5rem;
+  padding: 5rem 0 5rem 0;
   text-align: center;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(whitesmoke), to(#e6e6e6));
-  background-image: linear-gradient(whitesmoke, #e6e6e6);
 }
 
 .footer hr {
@@ -414,13 +406,13 @@ input[type=submit] {
   border: none;
   font-size: 1.1em;
   cursor: pointer;
-  border-radius: 4px;
+  border-radius: 5rem;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
 }
 
 input[type=submit]:hover {
-  background-color: #f17577;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  background-color: #e75d5f;
 }
 
 .contact-form {
@@ -452,6 +444,8 @@ input[type=submit]:hover {
 #up-arrow i {
   margin-top: 1.5rem;
   font-size: 2.6em;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
 }
 
 @media only screen and (max-width: 1000px) {
