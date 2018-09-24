@@ -1,4 +1,5 @@
-* {
+*,
+html {
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
@@ -7,6 +8,14 @@
 body {
   background-color: whitesmoke;
   font-family: 'Poppins', 'Montserrat', sans-serif;
+  overflow-x: hidden;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .app {
@@ -28,7 +37,6 @@ body {
   width: 100%;
   padding: 0;
   margin: 0;
-  padding: 0;
   margin: auto;
   -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
@@ -282,21 +290,6 @@ body {
   letter-spacing: 4px;
 }
 
-.cover button {
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  color: whitesmoke;
-  opacity: .5;
-  font-size: 1.5rem;
-  font-weight: 800;
-  padding: 16px 28px;
-  letter-spacing: 4px;
-}
-
 .service-style {
   padding: 80px 0px 80px 0px;
   text-align: center;
@@ -335,13 +328,12 @@ body {
 }
 
 .gallery {
-  background-color: whitesmoke;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
-  grid-gap: 6rem;
-  padding: 6rem;
+  grid-gap: 5rem;
+  padding: 5rem;
   padding-top: 100px;
 }
 
@@ -350,7 +342,7 @@ body {
   width: 100%;
 }
 
-.gallery-image:hover {
+.gallery-image img:hover {
   cursor: pointer;
   -webkit-transition: all .2s ease;
   transition: all .2s ease;
