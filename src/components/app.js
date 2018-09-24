@@ -14,8 +14,10 @@ export default class App extends Component {
           <Navbar />
           <div className="cover">
             <img className="cover-img" src="https://images.pexels.com/photos/459642/pexels-photo-459642.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="image_cover" />
-            <h1 className="h1">Tenyson C. Partridge</h1>
-            <h2 className="h2">Developer & Designer</h2>
+            <div className="header-container">
+              <h1 className="h1">Tenyson C. Partridge</h1>
+              <h2 className="h2">Developer & Designer</h2>
+            </div>
           </div>
           <Services/>
           <div className="main-img-divider">

@@ -5,19 +5,19 @@ class Services extends Component {
         return (
             <div className="service">
                 <div id="skills" className="service-style">
-                    <h2>Developer</h2>
+                    <h2>Develop</h2>
                     <hr />
                     <p>Wordpress, HTML5, CSS & SCSS, JavaScript, MySQL, React, C#, and Python.</p>
                 </div>
                 <div className="service-style">
-                    <h2>Designer</h2>
+                    <h2>Design</h2>
                     <hr />
-                    <p>Proficient in Adobe Creative Suite and Creative Strategies.</p>
+                    <p>Adobe Creative Suite, GIMP, Sketch and Creative Strategies.</p>
                 </div>
                 <div className="service-style">
-                    <h2>TESTING</h2>
+                    <h2>Testing</h2>
                     <hr />
-                    <p>Agile testing, test plans, cases, processes. </p>
+                    <p>Efficient test plans, cases, processes, performance. </p>
                 </div>
             </div>
 
