@@ -3,6 +3,7 @@ html {
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 
 body {
@@ -20,26 +21,19 @@ body {
 }
 
 .app {
-    margin: 35px 70px 35px 70px;
-    padding: 0;
     margin: 0;
-    width: 100%;
-}
-
-.app-wrapper {
-    margin: 0;
-    padding: 0;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     width: 100%;
 }
 
 .container {
-    display: grid;
     width: 100%;
     padding: 0;
-    margin: 0;
     margin: auto;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, .15);
-    border: 1px solid rgba(0, 0, 0, .1);
+    border: 1px solid rgba(0, 0, 0, .08);
     background-color: whitesmoke;
     -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein 2s; /* Firefox < 16 */
@@ -50,7 +44,8 @@ body {
 
 .nav-bar {
     display: flex;
-    position: sticky;
+    position: relative;
+    width: 100%;
     top: 0;
     z-index: 5;
     background-color: whitesmoke;
@@ -58,16 +53,13 @@ body {
     width: 100%;
 }
 .nav-bar ul {
-    display: flex;
     margin: 0;
-    margin: auto;
     width: 100%;
 }
 
 .nav-bar li {
     display: flex;
     list-style-type: none;
-    width: 100%;
     margin: auto;
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -83,13 +75,12 @@ body {
     font-size: 1.8em;
     letter-spacing: .2rem;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
-}
-
-.nav-bar-text:hover {
-    color: black;
-    text-decoration: none;
-    opacity: 0.6;
-    transition: all 0.3s ease-out;
+    transition: all 0.3s ease;
+    &:hover {
+        color: #222222;
+        text-decoration: none;
+        opacity: 0.6;
+    }
 }
 
 .nav-bar-text:active {
@@ -213,10 +204,9 @@ body {
 .service {
     position: relative;
     display: grid;
-    margin: 60px;
-    padding: 20px;
+    width: 100%;
+    margin: auto;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px;
 }
 
 .h1 {
@@ -240,7 +230,7 @@ body {
     -ms-transform: translate(-50%, -50%);
     color: whitesmoke;
     opacity: .8;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 800;
     padding: 16px 28px;
     letter-spacing: 4px;
@@ -290,9 +280,9 @@ body {
 .gallery-image img {
     height: 100%;
     width: 100%;
+    transition: all .3s ease;
     &:hover {
         cursor: pointer;
-        transition: all .2s ease;
         filter: contrast(140%);
         box-shadow: 0rem 0rem 3rem rgba(0, 0, 0, .05);
     }
@@ -396,11 +386,13 @@ input[type=submit]:hover {
 }
 
 @media only screen and (max-width: 1000px) {
-    .container {
+    html {
+        font-size: 50%;
     }
 }
 
-@media only screen and (max-width: 400px) {
-    .container {
+@media only screen and (max-width: 600px) {
+    html {
+        font-size: 45%;
     }
 }

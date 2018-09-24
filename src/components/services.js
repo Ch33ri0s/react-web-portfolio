@@ -5,7 +5,7 @@ class Services extends Component {
         return (
             <div className="service">
 
-                <div className="service-style">
+                <div id="skills" className="service-style">
                     <h2>Developer</h2>
                     <hr />
                     <p>Wordpress, HTML5, CSS & SCSS, JavaScript, React, C#, and Python.</p>

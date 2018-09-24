@@ -19,7 +19,7 @@ export default class App extends Component {
           </div>
           <Services/>
           <div className="main-img-divider">
-            <img id="skills" className="img-divider" src="https://images.pexels.com/photos/270408/pexels-photo-270408.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            <img className="img-divider" src="https://images.pexels.com/photos/270408/pexels-photo-270408.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
               alt="img-divider" width="100%" height="600vh" />
           </div>
           <Gallery/>
