@@ -1,12 +1,22 @@
 import React, { Component } from 'react';
 
 class Gallery extends Component {
+    constructor() {
+        super()
+
+        this.onClickHandle.bind = this.onClickHandle.bind(this);
+    }
+
+    onClickHandle(){
+        window.open('https://simmer.io/@Ch33ri0s/box-drop');
+    }
+
     render() {
         return (
             <div className="projects" id="projects">
-                <div className="gallery">
+                <div className="gallery" onClick={this.onClickHandle}>
                     <div className="gallery-image">
-                        <img src="https://images.pexels.com/photos/316465/pexels-photo-316465.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="img1" />
+                        <img src="https://i.postimg.cc/Px9tR1K4/Screenshot_2018-09-25_Unity_Web_GL_Player_Box_Drop.png" alt="img1" />
                     </div>
 
                     <div className="gallery-image">

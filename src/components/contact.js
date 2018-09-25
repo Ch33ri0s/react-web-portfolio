@@ -35,7 +35,7 @@ export default class Contact extends Component {
                 <input type="text" id="email" name="lastname" placeholder="Email" value={this.state.email} onChange={event => this.setState({email: event.target.value})}/>
 
                 <label >Subject</label>
-                <textarea name="subject" id="subject" placeholder="Message" style={{height: 200 + 'px'}} value={this.state.subject} onChange={event => this.setState({subject: event.target.value})} />
+                <textarea name="subject" id="subject" placeholder="Message" value={this.state.subject} onChange={event => this.setState({subject: event.target.value})}/>
 
                 <input type="submit" value="Submit" />
             </form>

@@ -3,10 +3,6 @@ html {
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
 }
 
 body {
@@ -431,12 +427,14 @@ input[type=submit]:hover {
 }
 
 .contact-form {
-  width: 60%;
+  width: 50%;
   margin: auto;
   color: whitesmoke;
   background-color: whitesmoke;
   border-top: 1px solid silver;
   border-bottom: 1px solid silver;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .form {
