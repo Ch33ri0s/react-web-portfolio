@@ -281,9 +281,9 @@ body {
     transition: all .3s ease;
     &:hover {
         cursor: pointer;
-        filter: contrast(140%);
         box-shadow: 0rem 0rem 3rem rgba(0, 0, 0, .1);
-        border-radius: 5rem;
+        border-radius: 1rem;
+        transform: scale(1.1, 1.1);
     }
 }
 

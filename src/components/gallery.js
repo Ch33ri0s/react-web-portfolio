@@ -9,13 +9,20 @@ class Gallery extends Component {
 
     onClickHandle(){
         window.open('https://simmer.io/@Ch33ri0s/box-drop');
+        // const getInput = window.alert('You sure you want to leave the page?');
+        // if (getInput === null) {
+        //     return;
+        // }
+        // else {
+        //     return window.open('https://simmer.io/@Ch33ri0s/box-drop');
+        // }
     }
 
     render() {
         return (
             <div className="projects" id="projects">
-                <div className="gallery" onClick={this.onClickHandle}>
-                    <div className="gallery-image">
+                <div className="gallery">
+                    <div className="gallery-image" onClick={this.onClickHandle}>
                         <img src="https://i.postimg.cc/Px9tR1K4/Screenshot_2018-09-25_Unity_Web_GL_Player_Box_Drop.png" alt="img1" />
                     </div>
 

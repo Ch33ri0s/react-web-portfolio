@@ -338,11 +338,11 @@ body {
 
 .gallery-image img:hover {
   cursor: pointer;
-  -webkit-filter: contrast(140%);
-          filter: contrast(140%);
   -webkit-box-shadow: 0rem 0rem 3rem rgba(0, 0, 0, 0.1);
           box-shadow: 0rem 0rem 3rem rgba(0, 0, 0, 0.1);
-  border-radius: 5rem;
+  border-radius: 1rem;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
 }
 
 #send-message-text {
