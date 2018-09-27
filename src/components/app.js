@@ -6,6 +6,7 @@ import Gallery from './gallery';
 import Services from './services';
 
 export default class App extends Component {
+
   render() {
     return (
       <div className='app'>

@@ -1,33 +1,16 @@
 import React, { Component } from 'react';
 
 class Gallery extends Component {
-    constructor() {
-        super()
-
-        this.onClickHandle.bind = this.onClickHandle.bind(this);
-    }
-
-    onClickHandle(){
-        window.open('https://simmer.io/@Ch33ri0s/box-drop');
-        // const getInput = window.alert('You sure you want to leave the page?');
-        // if (getInput === null) {
-        //     return;
-        // }
-        // else {
-        //     return window.open('https://simmer.io/@Ch33ri0s/box-drop');
-        // }
-    }
-
     render() {
         return (
             <div className="projects" id="projects">
                 <div className="gallery">
-                    <div className="gallery-image" onClick={this.onClickHandle}>
+                    <div className="gallery-image" onClick={() => window.open('https://simmer.io/@Ch33ri0s/box-drop')}>
                         <img src="https://i.postimg.cc/Px9tR1K4/Screenshot_2018-09-25_Unity_Web_GL_Player_Box_Drop.png" alt="img1" />
                     </div>
 
-                    <div className="gallery-image">
-                        <img src="https://images.pexels.com/photos/673648/pexels-photo-673648.jpeg?auto=compress&cs=tinysrgb&h=350" alt="img1" />
+                    <div className="gallery-image" onClick={() => window.open('https://mirandacolorist.com/')}>
+                        <img src="https://i.postimg.cc/ZKZ25739/Screenshot_2018-09-27_The_Hair_Colorist_Professional_Services.jpg" alt="img1" />
                     </div>
 
                     <div className="gallery-image">
