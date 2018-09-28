@@ -6,7 +6,7 @@ html {
 }
 
 body {
-  background-color: whitesmoke;
+  background-color: white;
   font-family: 'Poppins', 'Montserrat', sans-serif;
   font-weight: normal;
   margin: 0;
@@ -79,26 +79,22 @@ body {
 
 .nav-bar-text {
   width: 100%;
-  color: whitesmoke;
+  color: #646464;
   margin-left: 4rem;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 600;
   font-size: 1.8em;
   letter-spacing: .2rem;
-  text-shadow: 1px 1px 2px black;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
 .nav-bar-text:hover {
-  color: black;
+  color: #646464;
+  -webkit-transform: scale(1.2, 1.2);
+          transform: scale(1.2, 1.2);
   text-decoration: none;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0);
-}
-
-.nav-bar-text:active {
-  text-shadow: 1px 1px 8px black;
 }
 
 .icon-bar {
