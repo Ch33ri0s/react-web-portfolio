@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 class Gallery extends Component {
     render() {
         return (
@@ -10,11 +9,11 @@ class Gallery extends Component {
                     </div>
 
                     <div className="gallery-image" onClick={() => window.open('https://mirandacolorist.com/')}>
-                        <img src="https://i.postimg.cc/ZKZ25739/Screenshot_2018-09-27_The_Hair_Colorist_Professional_Services.jpg" alt="img1" />
+                        <img src="https://i.postimg.cc/ZKZ25739/Screenshot_2018-09-27_The_Hair_Colorist_Professional_Services.jpg" alt="img2" />
                     </div>
 
-                    <div className="gallery-image">
-                        <img src="https://images.pexels.com/photos/265047/pexels-photo-265047.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="img1" />
+                    <div className="gallery-image" onClick={() => window.open('https://ggenergydrink.com/')}>
+                        <img src="https://i.postimg.cc/0NgQRJ4r/Screenshot_2018-10-10_GG_Energy_Drink.jpg" alt="img3" />
                     </div>
 
                     <div className="gallery-image">

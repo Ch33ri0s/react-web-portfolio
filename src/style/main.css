@@ -21,7 +21,6 @@ body {
   margin: 0;
   margin-top: 2rem;
   margin-bottom: 2rem;
-  width: 100%;
 }
 
 .container {
@@ -49,7 +48,7 @@ body {
   top: 0;
   width: 100%;
   z-index: 5;
-  background-color: whitesmoke !important;
+  background-color: #333333 !important;
   -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
           box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
   width: 100%;
@@ -79,7 +78,7 @@ body {
 
 .nav-bar-text {
   width: 100%;
-  color: #646464;
+  color: whitesmoke;
   margin-left: 4rem;
   text-decoration: none;
   text-transform: uppercase;
@@ -248,7 +247,8 @@ body {
 .h1 {
   position: absolute;
   left: 50%;
-  top: 35%;
+  top: 30%;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -261,8 +261,9 @@ body {
 
 .h2 {
   position: absolute;
+  font-family: cursive;
   left: 50%;
-  top: 45%;
+  top: 38%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -271,6 +272,7 @@ body {
   font-size: 2rem;
   font-weight: 800;
   padding: 16px 28px;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.6);
   letter-spacing: 4px;
 }
 
@@ -288,30 +290,44 @@ body {
           justify-content: space-evenly;
   text-transform: uppercase;
   font-size: 2.1rem;
-  color: #da595c;
+  color: #C9E59E;
   letter-spacing: 2px;
   font-weight: 600;
 }
 
 .service-style p {
   padding: 0px 40px 0px 40px;
-  color: #646464;
-  font-weight: 600;
+  color: #333333;
+  font-weight: 500;
   font-size: 1.2rem;
 }
 
 .service-style hr {
   max-width: 100%;
-  min-width: 40%;
+  min-width: 0%;
+  background-color: #999999;
   margin: 50px 100px 50px 100px;
 }
 
 .main-img-divider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 100%;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
+  height: 60vh;
+  background-color: #333333;
   -webkit-clip-path: polygon(50% 25%, 100% 0, 100% 100%, 0 100%, 0 0);
   clip-path: polygon(50% 25%, 100% 0, 100% 100%, 0 100%, 0 0);
+}
+
+.quote {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  color: #999999;
+  font-size: 2rem;
+  padding-top: 7rem;
 }
 
 .gallery {
@@ -404,7 +420,7 @@ textarea {
 }
 
 input[type=submit] {
-  background-color: #da595c;
+  background-color: #C9E59E;
   color: white;
   padding: 12px 50px;
   margin-bottom: 20px;
@@ -417,7 +433,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  background-color: #e75d5f;
+  background-color: #e1ffb4;
 }
 
 .contact-form {
@@ -444,7 +460,7 @@ input[type=submit]:hover {
 }
 
 #up-arrow:hover {
-  color: #da595c;
+  color: #C9E59E;
   cursor: pointer;
 }
 
@@ -453,6 +469,7 @@ input[type=submit]:hover {
   font-size: 2.6em;
   -webkit-transition: all .3s ease;
   transition: all .3s ease;
+  color: #333333;
 }
 
 @media only screen and (max-width: 1000px) {

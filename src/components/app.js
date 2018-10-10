@@ -14,7 +14,7 @@ export default class App extends Component {
         <div className="container">
           <Navbar />
           <div className="cover">
-            <img className="cover-img" src="https://images.pexels.com/photos/459642/pexels-photo-459642.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="image_cover" />
+            <img className="cover-img" src="https://images.pexels.com/photos/169573/pexels-photo-169573.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="image_cover" />
             <div className="header-container">
               <h1 className="h1">Tenyson C. Partridge</h1>
               <h2 className="h2">Developer & Designer</h2>
@@ -22,8 +22,11 @@ export default class App extends Component {
           </div>
           <Services/>
           <div className="main-img-divider">
-            <img className="img-divider" src="https://images.pexels.com/photos/270408/pexels-photo-270408.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-              alt="img-divider" width="100%" height="600vh" />
+            <div className="quote">
+            <em>" The more you know,
+            the more you know
+            you don't know. " <br/>
+            <br/>~ Aristotle</em></div>
           </div>
           <Gallery/>
           <h1 id="send-message-text">Shoot me a message!</h1>
