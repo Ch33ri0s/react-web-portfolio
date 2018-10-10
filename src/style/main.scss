@@ -8,7 +8,7 @@ html {
 }
 
 body {
-    background-color: whitesmoke;
+    background-color: #222222;
     font-family: 'Poppins', 'Montserrat', sans-serif;
     font-weight: normal;
     margin: 0;
@@ -25,13 +25,11 @@ body {
     padding: 0;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    width: 100%;
 }
 
 .container {
     padding: 0 !important;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, .15);
-    border: 1px solid rgba(0, 0, 0, .08);
     background-color: whitesmoke;
     -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein 2s; /* Firefox < 16 */
@@ -47,6 +45,7 @@ body {
     width: 100%;
     z-index: 5;
     background-color: #333333 !important;
+    border-top: 1px solid #444444;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, .25);
     width: 100%;
 }
@@ -260,9 +259,10 @@ body {
 
 .main-img-divider {
     display: flex;
+
     width: 100%;
     height: 30rem;
-    background-color: #333333;
+    background-image: linear-gradient(190deg, #444444, #111111);
     -webkit-clip-path: polygon(50% 25%, 100% 0, 100% 100%, 0 100%, 0 0);
     clip-path: polygon(50% 25%, 100% 0, 100% 100%, 0 100%, 0 0);
 }
