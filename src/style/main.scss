@@ -30,7 +30,7 @@ body {
 .container {
     padding: 0 !important;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, .15);
-    background-color: whitesmoke;
+    background-color: #e1e1e1 !important;
     -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein 2s; /* Firefox < 16 */
     -ms-animation: fadein 2s; /* Internet Explorer */
@@ -69,7 +69,7 @@ body {
 
 .nav-bar-text {
     width: 100%;
-    color: whitesmoke;
+    color: #e1e1e1;
     margin-left: 4rem;
     text-decoration: none;
     text-transform: uppercase;
@@ -299,7 +299,7 @@ body {
 #send-message-text {
     display: flex;
     justify-content: center;
-    color: #646464;
+    color: #333333;
     align-items: center;
     font-size: 2.1rem;
     padding: 2rem 0 2rem 0;
@@ -334,22 +334,32 @@ body {
     margin-top: 30px;
     opacity: .4;
     font-size: .8rem;
-    color: #646464;
+    color: #333333;
 }
 
 input[type=text],
 select,
 textarea {
     width: 100%;
-    padding: 12px;
+    padding: 1rem;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .15);
+    border-radius: 100rem;
     box-sizing: border-box;
     margin-top: 6px;
     margin-bottom: 16px;
     font-family: 'Basic', sans-serif;
     font-size: 1rem;
-    resize: vertical;
+    resize: none;
+    outline: none;
+    transition: all .5s ease;
+    &:hover {
+        background-color: whitesmoke;
+    }
+
+    &:focus {
+        border-bottom: 1px solid #C9E59E;
+    }
 }
 
 input[type=submit] {
@@ -368,19 +378,8 @@ input[type=submit]:hover {
     background-color: rgb(225, 255, 180);
 }
 .contact-form {
-    width: 50%;
+    width: 40rem;
     margin: auto;
-    color: whitesmoke;
-    background-color: whitesmoke;
-    border-top: 1px solid silver;
-    border-bottom: 1px solid silver;
-    box-sizing: border-box;
-}
-
-.form {
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 #up-arrow i {
